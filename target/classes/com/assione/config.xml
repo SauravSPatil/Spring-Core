@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
+	http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/context
+ 	http://www.springframework.org/schema/context/spring-beans.xsd">
+ 	
+ 	
+	<bean class="com.assione.Address" id="add">
+ 		<property name="street" value="blackroad" />
+ 		<property name="city" value="mumbai" />
+		<property name="state" value="maharastra" /> 	
+		<property name="zip" value="40000" />	
+		<property name="country" value="india" />
+ 		
+ 		
+ 	
+ 	</bean>
+		<bean class="com.assione.Customer" id="cust">
+ 	<property name="customerId" value="232"/>
+ 	<property name="customerName" value="varun"/>
+ 	<property name="customerContact" value="09809877"/>
+ 	<property name="Ob" ref="add">
+	</property>
+	</bean>
+
+ </beans>

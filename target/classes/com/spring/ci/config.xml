@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
+	http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/context
+ 	http://www.springframework.org/schema/context/spring-beans.xsd">
+ 	
+ 	
+ 	<bean class="com.spring.ci.Address" name="add1" >
+    <constructor-arg value="blackroad" type="String"/>
+    <constructor-arg value="mumbai " type="String"/>
+    <constructor-arg value="maharastra " type="String" />
+    <constructor-arg  value="40000 " type="int"/>
+    <constructor-arg value="india "  type="String" />
+    
+	</bean>
+ 	
+ 	<bean class="com.spring.ci.Customer" name="cust1" >
+     <constructor-arg value="232" type="int"/>
+    <constructor-arg value="varun" type="String"/>
+    <constructor-arg value="09809877" type="int"/>
+   	<constructor-arg ref="add1" />
+	</bean>
+	
+	
+	
+ 	
+	
+ </beans>
